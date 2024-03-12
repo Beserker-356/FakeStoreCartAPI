@@ -39,7 +39,7 @@
 ![Screenshot from 2024-03-12 17-26-58](https://github.com/Beserker-356/FakeStoreCartAPI/assets/141203631/771fdfcf-9b7f-4946-8476-030c236d7549)
 
 <h3>Create a new cart</h3>
-<p>Enter "http://localhost:8080/carts" in the input area and make sure that POST method is selected. Enter Send. A new cart will be created.<br>Enter the following text in the "Body" section under "raw":<br>(Make sure that JSON is selected)
+<p>Enter "http://localhost:8080/carts" in the input area and make sure that POST method is selected. Enter Send. A new cart will be created.<br>Enter the following text in the "Body" section under "raw":<br>(Make sure that JSON is selected)<br>
   {
     "id": 1,
     "userId":5,
@@ -56,3 +56,20 @@
 
 ![Screenshot from 2024-03-12 17-29-33](https://github.com/Beserker-356/FakeStoreCartAPI/assets/141203631/1ad6f12f-58e3-496f-ab39-f25140a7e4fe)
 
+<h3>Update cart</h3>
+<p>Enter "http://localhost:8080/carts" in the input area and make sure that PUT method is selected. Enter Send. The cart will be updated.<br>Enter the following text in the "Body" section under "raw":<br>(Make sure that JSON is selected)<br>
+  {
+    "id": 1,
+    "userId":5,
+    "date":"2020-02-03",
+    "products":[{
+            "productId":5,
+            "quantity":1
+        },
+        {
+            "productId":1,
+            "quantity":5
+        }]
+}</p>
+
+![Screenshot from 2024-03-12 17-33-49](https://github.com/Beserker-356/FakeStoreCartAPI/assets/141203631/cfc5c3b3-edae-46f3-bc33-942b522ac174)
