@@ -32,3 +32,27 @@
 <p>Enter "http://localhost:8080/carts/user/1" (You can also send different numbers as userId in place of 1.) in the input area and make sure that GET method is selected. Enter Send. All the carts of the given user will be fetched.</p>
 
 ![Screenshot from 2024-03-12 17-21-54](https://github.com/Beserker-356/FakeStoreCartAPI/assets/141203631/e73c9eff-9f71-4c61-99fb-63b0c7d6a6fa)
+
+<h3>Delete cart</h3>
+<p>Enter "http://localhost:8080/carts/1" (You can also send different numbers as id in place of 1.) in the input area and make sure that DELETE method is selected. Enter Send. The cart with the passed id will be deleted.</p>
+
+![Screenshot from 2024-03-12 17-26-58](https://github.com/Beserker-356/FakeStoreCartAPI/assets/141203631/771fdfcf-9b7f-4946-8476-030c236d7549)
+
+<h3>Create a new cart</h3>
+<p>Enter "http://localhost:8080/carts" in the input area and make sure that POST method is selected. Enter Send. A new cart will be created.<br>Enter the following text in the "Body" section under "raw":<br>(Make sure that JSON is selected)
+  {
+    "id": 1,
+    "userId":5,
+    "date":"2020-02-03",
+    "products":[{
+            "productId":5,
+            "quantity":1
+        },
+        {
+            "productId":1,
+            "quantity":5
+        }]
+}</p>
+
+![Screenshot from 2024-03-12 17-29-33](https://github.com/Beserker-356/FakeStoreCartAPI/assets/141203631/1ad6f12f-58e3-496f-ab39-f25140a7e4fe)
+
